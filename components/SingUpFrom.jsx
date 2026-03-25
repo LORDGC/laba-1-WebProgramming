@@ -2,7 +2,7 @@ import "@/app/globals.css"
 
 export default function SignupPage() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-[400px] p-6 bg-white">
+        <div className="flex flex-col items-center justify-center min-h-[400px] w-[350px] rounded-2xl p-6 bg-white">
             <div className="">
                 <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">Реєстрація</h2>
                 <form className="flex flex-col gap-4">

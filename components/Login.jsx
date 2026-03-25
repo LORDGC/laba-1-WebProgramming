@@ -2,7 +2,7 @@ import "@/app/globals.css"
 
 export default function SignInPage() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-[340px] p-6 bg-white">
+        <div className="flex flex-col items-center justify-center min-h-[340px] w-[300px] rounded-2xl p-6 bg-white">
             <div className="">
                 <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">Вхід</h2>
                 <form className="flex flex-col gap-4">
