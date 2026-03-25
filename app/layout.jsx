@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
             </div>
             <Image src={headerImage} alt="bridge" fill priority className="object-cover z-0 brightness-75"/>
         </header>
-        <nav className="flex justify-center gap-4 p-4 backdrop-blur-md">
+        <nav className="flex justify-center gap-2 p-4 backdrop-blur-md md:gap-4">
             <Link href="/" className="px-4 py-2 bg-blue-200 hover:bg-blue-300 transition-colors rounded drop-shadow-lg">Головна</Link>
             <Link href="/login" className="px-4 py-2 bg-blue-200 hover:bg-blue-300 transition-colors rounded drop-shadow-lg">Вхід</Link>
             <Link href="/singup" className="px-4 py-2 bg-blue-200 hover:bg-blue-300 transition-colors rounded drop-shadow-lg">Реєстрація</Link>

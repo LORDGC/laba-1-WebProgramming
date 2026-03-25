@@ -2,7 +2,7 @@ import "@/app/globals.css"
 
 export default function FeedbackPage() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-[500px] p-6 bg-white">
+        <div className="flex flex-col items-center justify-center min-h-[700px] w-[500px] rounded-2xl p-6 bg-white">
             <div className="w-full max-w-md">
                 <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">Відгук</h2>
                 <form className="flex flex-col gap-5 text-gray-700">

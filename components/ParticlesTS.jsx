@@ -6,8 +6,6 @@ import { loadFull } from "tsparticles";
 
 const ParticlesBg = () => {
     const [init, setInit] = useState(false);
-
-    // Ініціалізація двигуна один раз при завантаженні
     useEffect(() => {
         initParticlesEngine(async (engine) => {
             await loadFull(engine);
@@ -15,7 +13,6 @@ const ParticlesBg = () => {
             setInit(true);
         });
     }, []);
-
     const particlesOptions = {
         background: {
             color: { value: "#d5e5fc" }, // Твій фон зі скріншоту
@@ -84,5 +81,4 @@ const ParticlesBg = () => {
         />
     );
 };
-
 export default ParticlesBg;
