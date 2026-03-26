@@ -14,13 +14,15 @@ export default function RootLayout({ children }) {
             <div className="z-20 absolute w-32 h-32 rounded-full bg-ocean flex items-center justify-center shadow-2xl border-4 border-white backdrop-blur-sm">
                 <Image src={pngImage} alt="pngBridge" className="w-20 h-20 object-contain drop-shadow-lg"/>
             </div>
+
+            <div className='w-full h-full backdrop-blur-[3px] bg-blue-100/50 absolute z-10'></div>
             <Image src={headerImage} alt="bridge" fill priority className="object-cover z-0 brightness-75"/>
         </header>
-        <nav className="flex justify-center gap-2 p-4 backdrop-blur-md md:gap-4">
-            <Link href="/" className="px-4 py-2 bg-blue-200 hover:bg-blue-300 transition-colors rounded drop-shadow-lg">Головна</Link>
-            <Link href="/login" className="px-4 py-2 bg-blue-200 hover:bg-blue-300 transition-colors rounded drop-shadow-lg">Вхід</Link>
-            <Link href="/singup" className="px-4 py-2 bg-blue-200 hover:bg-blue-300 transition-colors rounded drop-shadow-lg">Реєстрація</Link>
-            <Link href="/feedback" className="px-4 py-2 bg-blue-200 hover:bg-blue-300 transition-colors rounded drop-shadow-lg">Відгук</Link>
+        <nav className="flex justify-center gap-2 p-4 backdrop-blur-md md:gap-4 bg-blue-300/20">
+            <Link href="/" className="px-4 py-2 bg-blue-300 hover:bg-blue-400/80 transition-colors rounded drop-shadow-lg">Головна</Link>
+            <Link href="/login" className="px-4 py-2 bg-blue-300 hover:bg-blue-400/80 transition-colors rounded drop-shadow-lg">Вхід</Link>
+            <Link href="/singup" className="px-4 py-2 bg-blue-300 hover:bg-blue-400/80 transition-colors rounded drop-shadow-lg">Реєстрація</Link>
+            <Link href="/feedback" className="px-4 py-2 bg-blue-300 hover:bg-blue-400/80 transition-colors rounded drop-shadow-lg">Відгук</Link>
         </nav>
         <ParticlesBg />
         <main className="flex">
